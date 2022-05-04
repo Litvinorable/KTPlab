@@ -63,8 +63,8 @@ public class FractalExplorer {
                 }
 
                 else {
-                    float hue = 0.7f + (float) iteration / 200f;
-                    int rgbColor = Color.HSBtoRGB(hue, 1f, 1f);
+                    float hue = 0.5f + (float) iteration / 100f;
+                    int rgbColor = Color.HSBtoRGB(hue, 0.9f, 1f);
 
                     display.drawPixel(x, y, rgbColor);
                 }

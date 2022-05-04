@@ -86,7 +86,7 @@ public class FractalExplorer
         rowsRemaining = displaySize; // значение = кол-во строк
 
         //вызов FractalWorker
-        // для каждой строки создаём отдельный рабочий обхект, а затем вызываем для него execute()
+        // для каждой строки создаём отдельный рабочий объект, а затем вызываем для него execute()
         for (int x=0; x<displaySize; x++){
             FractalWorker drawRow = new FractalWorker(x);
             drawRow.execute();
@@ -94,7 +94,7 @@ public class FractalExplorer
     }
 
     //НОВОЕ
-    // включает и отключает кнопки кнопки с выпадающим списком на основе указанного параметра
+    // включает и отключает кнопки с выпадающим списком на основе указанного параметра
     // с помощью метода setEnabled()
     private void enableUI(boolean val) {
         myComboBox.setEnabled(val);
